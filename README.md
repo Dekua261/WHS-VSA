@@ -6,7 +6,7 @@ A website for Western High School's Vietnamese Student Association!
 - [Todo](#todo)
 - [License](#license)
 ## Todo
-- [ ] [`Navbar`](./src/components/Navbar.jsx)
-- [ ] [`Carousel`](./src/components/Carousel.jsx)
+- [ ] [Navbar](./src/components/Navbar.jsx)
+- [ ] [Carousel](./src/components/Carousel.jsx)
 ## License
 WHS-VSA is licensed under the [MIT license](./LICENSE.md).
