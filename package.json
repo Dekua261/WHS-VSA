@@ -1,6 +1,7 @@
 {
   "name": "whs-vsa",
   "version": "1.0.0",
+  "homepage": "https://andrewtrann777.github.io/WHS-VSA/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
