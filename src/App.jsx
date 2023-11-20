@@ -8,8 +8,8 @@ import NoMatch from "./pages/NoMatch";
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
-        <Navbar />
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
