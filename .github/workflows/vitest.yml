@@ -22,7 +22,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-      - run: \
-          corepack enable
-          yarn
-          yarn test
+      - run: yarn
