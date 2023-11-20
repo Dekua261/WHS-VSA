@@ -5,9 +5,9 @@ import NoMatch from "./pages/NoMatch";
 
 const App = () => {
   return (
-    <Router basename="/WHS-VSA">
+    <Router>
       <Routes>
-        <Route path="/">
+        <Route path="/WHS-VSA">
           <Route index element={<Home />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
