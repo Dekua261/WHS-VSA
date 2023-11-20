@@ -5,7 +5,7 @@ import NoMatch from "./pages/NoMatch";
 
 const App = () => {
   return (
-    <Router basename={process.env["DEVELOPMENT"] === "false" ? "/" : "/WHS-VSA"}>
+    <Router basename={import.meta.env["DEVELOPMENT"] === "false" ? "/WHS-VSA" : "/"}>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
