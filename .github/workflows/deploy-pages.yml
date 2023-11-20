@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,10 +24,9 @@ jobs:
       - run: |
           yarn
           yarn test
-          yarn build
 
   deploy:
-    needs: build
+    needs: test
 
     permissions:
       contents: read
@@ -47,6 +46,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: "./dist"
+      - name: Build
+        run: yarn build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2.0.4
