@@ -1,2 +1,2 @@
 # Western High School VSA (Vietnamese Student Association)
-[![Vitest CI](https://github.com/andrewtrann777/WHS-VSA/actions/workflows/vitest.yml/badge.svg?branch=main)](https://github.com/andrewtrann777/WHS-VSA/actions/workflows/vitest.yml)
+[![Deploy Pages CD](https://github.com/andrewtrann777/WHS-VSA/actions/workflows/vitest.yml/badge.svg?branch=main)](https://github.com/andrewtrann777/WHS-VSA/actions/workflows/deploy-pages.yml)
