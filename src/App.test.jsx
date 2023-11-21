@@ -1,9 +1,12 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import App from "./App";
 
-describe("Simple working test", () => {
-  it('should display hello world', () => {
-    render(<App />);
-//    expect(screen.getByText(/Hello, world!/i)).toBeInTheDocument();
+describe("simple working test", () => {
+  it('should display navbar items', () => {
+    const { container } = render(<App />);
+    const navbarItems = container.getElementsByClassName("navbar-item");
+    for (let i = 0; i < navbarItems.length; i++) {
+      expect(navbarItems.item(i)).toBeVisible();
+    }
   });
 });
