@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: rgb(170, 56, 30);
+
+  & ul {
+    display: flex;
+  }
+
+  & .navbar-logo {
+    margin-left: 0.75vw;
+    margin-right: auto;
+    color: black;
+  }
+
+  & .navbar-item {
+    color: black;
+    text-decoration: none;
+  }
+}

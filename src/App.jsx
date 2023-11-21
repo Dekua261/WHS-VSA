@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import NoMatch from "./pages/NoMatch";
+import Join from "./pages/Join";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<NoMatch />} />
+          <Route path="/join" element={<Join />} />
         </Route>
       </Routes>
       <Outlet />
